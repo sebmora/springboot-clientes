@@ -3,8 +3,8 @@
     {
       "id": "18051246-2",
       "nombre": "Sebastian",
-      "aPaterno": "Mora",
-      "aMaterno": "Espinoza",
+      "apellidoPaterno": "Mora",
+      "apellidoMaterno": "Espinoza",
       "idDireccion": 1,
       "telefono": 97727696,
       "email": "sebmora@gmail.com"
@@ -12,8 +12,8 @@
     {
       "id": "17542265-3",
       "nombre": "Juan",
-      "aPaterno": "Garcia",
-      "aMaterno": "Alvarez",
+      "apellidoPaterno": "Garcia",
+      "apellidoMaterno": "Alvarez",
       "idDireccion": 2,
       "telefono": 92244564,
       "email": "jc.rocky.garcia@gmail.com"
@@ -21,8 +21,8 @@
     {
       "id": "15642542-k",
       "nombre": "Manuel",
-      "aPaterno": "Flores",
-      "aMaterno": "Delgado",
+      "apellidoPaterno": "Flores",
+      "apellidoMaterno": "Delgado",
       "idDireccion": 3,
       "telefono": 76655345,
       "email": "manu.hbk69@gmail.com"
@@ -30,17 +30,17 @@
     {
       "id": "17645332-2",
       "nombre": "Hector",
-      "aPaterno": "Mora",
-      "aMaterno": "Cid",
+      "apellidoPaterno": "Mora",
+      "apellidoMaterno": "Cid",
       "idDireccion": 4,
       "telefono": 76543342,
-      "email": "naxitoxqhotmail.com"
+      "email": "naxitox@hotmail.com"
     },
     {
       "id": "14344525-6",
       "nombre": "Nicolas",
-      "aPaterno": "Lazcani",
-      "aMaterno": "Torres",
+      "apellidoPaterno": "Lazcani",
+      "apellidoMaterno": "Torres",
       "idDireccion": 5,
       "telefono": 87654423,
       "email": "yutroc@gmail.com"
@@ -48,8 +48,8 @@
     {
       "id": "13006867-k",
       "nombre": "Andres",
-      "aPaterno": "Guden",
-      "aMaterno": "Soraburu",
+      "apellidoPaterno": "Guden",
+      "apellidoMaterno": "Soraburu",
       "idDireccion": 6,
       "telefono": 66789403,
       "email": "guden@hotmail.com"
@@ -57,8 +57,8 @@
     {
       "id": "15998756-4",
       "nombre": "Marcelo",
-      "aPaterno": "Canales",
-      "aMaterno": "Rojas",
+      "apellidoPaterno": "Canales",
+      "apellidoMaterno": "Rojas",
       "idDireccion": 7,
       "telefono": 98675432,
       "email": "marcelo@alaya.cl"
@@ -66,8 +66,8 @@
     {
       "id": "24546546-9",
       "nombre": "Wilder",
-      "aPaterno": "Valera",
-      "aMaterno": "Riquelme",
+      "apellidoPaterno": "Valera",
+      "apellidoMaterno": "Riquelme",
       "idDireccion": 8,
       "telefono": 53456789,
       "email": "wilderjva@gmail.com"
@@ -75,8 +75,8 @@
     {
       "id": "17749232-9",
       "nombre": "Georgina",
-      "aPaterno": "Becerra",
-      "aMaterno": "Balmaceda",
+      "apellidoPaterno": "Becerra",
+      "apellidoMaterno": "Balmaceda",
       "idDireccion": 9,
       "telefono": 97727328,
       "email": "geo6277@gmail.com"
@@ -84,8 +84,8 @@
     {
       "id": "24954474-4",
       "nombre": "Julieta",
-      "aPaterno": "Mora",
-      "aMaterno": "Becerra",
+      "apellidoPaterno": "Mora",
+      "apellidoMaterno": "Becerra",
       "idDireccion": 10,
       "telefono": 97727328,
       "email": "julieta.mb@gmail.com"
@@ -93,8 +93,8 @@
     {
       "id": "17654345-5",
       "nombre": "Flavio",
-      "aPaterno": "Buchholz",
-      "aMaterno": "Espinoza",
+      "apellidoPaterno": "Buchholz",
+      "apellidoMaterno": "Espinoza",
       "idDireccion": 11,
       "telefono": 765645677,
       "email": "flavio@hotmail.com"
@@ -102,8 +102,8 @@
     {
       "id": "20234567-k",
       "nombre": "Anais",
-      "aPaterno": "Mora",
-      "aMaterno": "Espinoza",
+      "apellidoPaterno": "Mora",
+      "apellidoMaterno": "Espinoza",
       "idDireccion": 12,
       "telefono": 423445687,
       "email": "anaismora@gmail.com"
@@ -111,8 +111,8 @@
     {
       "id": "12234456-5",
       "nombre": "Jose",
-      "aPaterno": "Mora",
-      "aMaterno": "Alveal",
+      "apellidoPaterno": "Mora",
+      "apellidoMaterno": "Alveal",
       "idDireccion": 13,
       "telefono": 92711600,
       "email": "josemora@hotmail.com"
@@ -120,8 +120,8 @@
     {
       "id": "11581815-5",
       "nombre": "Isabel",
-      "aPaterno": "Espinoza",
-      "aMaterno": "Mora",
+      "apellidoPaterno": "Espinoza",
+      "apellidoMaterno": "Mora",
       "idDireccion": 14,
       "telefono": 81232344,
       "email": "isabelesp@facebook.com"

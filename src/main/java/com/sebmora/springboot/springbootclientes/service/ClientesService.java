@@ -22,9 +22,27 @@ public class ClientesService {
 
     @Autowired
     private JsonSimpleUtil jsonSimpleUtil;
+    private ArrayList<Cliente> listadoClientesPorId;
 
     public ArrayList<Cliente> getListadoClientes() throws IOException, ParseException {
         ArrayList<Cliente> clientes = jsonSimpleUtil.getClientes(clientesResource);
         return clientes;
+    }
+
+    public ArrayList<Cliente> getListadoClientesPorId(String idCliente) throws IOException, ParseException {
+        return filtrarClientes(idCliente, getListadoClientes());
+    }
+
+    private ArrayList<Cliente> filtrarClientes(String idCliente, ArrayList<Cliente> listadoClientes) {
+
+        String filtroIdCliente = idCliente.trim().replace('-', ';').split(";")[0];
+
+        ArrayList<Cliente> listaFiltrada = new ArrayList<>();
+        for (Cliente c : listadoClientes) {
+            if (c.getId().contains(filtroIdCliente)) {
+                listaFiltrada.add(c);
+            }
+        }
+        return listaFiltrada;
     }
 }

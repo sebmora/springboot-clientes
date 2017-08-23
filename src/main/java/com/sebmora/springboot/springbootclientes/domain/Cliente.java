@@ -11,8 +11,8 @@ import lombok.Setter;
 public class Cliente {
     public String id;
     public String nombre;
-    public String aPaterno;
-    public String aMaterno;
+    public String apellidoPaterno;
+    public String apellidoMaterno;
     public int idDireccion;
     public String telefono;
     public String email;

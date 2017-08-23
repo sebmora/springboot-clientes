@@ -6,6 +6,7 @@ import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
@@ -21,13 +22,14 @@ public class ClientesController {
     @Autowired
     private ClientesService clientesService;
 
-    @RequestMapping(value = "/saludo/{nombre}")
-    public String saludo(@PathVariable(value = "nombre") String nombre) {
-        return "hola " + nombre + " !.";
-    }
-
-    @RequestMapping(value = "/listado")
-    public ArrayList<Cliente> listaUsuarios() throws IOException, ParseException {
+    @RequestMapping(method = RequestMethod.GET)
+    public ArrayList<Cliente> listaClientes() throws IOException, ParseException {
         return clientesService.getListadoClientes();
     }
+
+    @RequestMapping(value = "/{idCliente}", method = RequestMethod.GET)
+    public ArrayList<Cliente> clientePorId(@PathVariable(value = "idCliente") String idCliente) throws IOException, ParseException {
+        return clientesService.getListadoClientesPorId(idCliente);
+    }
+
 }

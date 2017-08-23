@@ -31,7 +31,8 @@ public class JsonSimpleUtil {
         ClienteConverter clienteConverter = new ClienteConverter();
 
         for (Object o : listaUsuarios) {
-            clientes.add(clienteConverter.convert((JSONObject) o));
+            Cliente c = clienteConverter.convert((JSONObject) o);
+            clientes.add(c);
         }
         return clientes;
     }
