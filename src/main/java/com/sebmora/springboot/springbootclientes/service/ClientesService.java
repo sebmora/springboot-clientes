@@ -1,15 +1,14 @@
 package com.sebmora.springboot.springbootclientes.service;
 
 import com.sebmora.springboot.springbootclientes.domain.Cliente;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
+import com.sebmora.springboot.springbootclientes.util.JsonSimpleUtil;
 import org.json.simple.parser.ParseException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 /**
@@ -21,13 +20,11 @@ public class ClientesService {
     @Value("classpath:json/clientes.json")
     private Resource clientesResource;
 
+    @Autowired
+    private JsonSimpleUtil jsonSimpleUtil;
+
     public ArrayList<Cliente> getListadoClientes() throws IOException, ParseException {
-        InputStreamReader inputStreamReader = new InputStreamReader(clientesResource.getInputStream());
-
-        JSONParser jsonParser = new JSONParser();
-        JSONObject jsonObject = (JSONObject) jsonParser.parse(inputStreamReader);
-        System.out.println(jsonObject);
-
-        return null;
+        ArrayList<Cliente> clientes = jsonSimpleUtil.getClientes(clientesResource);
+        return clientes;
     }
 }
