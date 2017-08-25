@@ -1,0 +1,88 @@
+{
+  "listaDirecciones": [
+    {
+      "idDireccion": 1,
+      "locacion": "Avenida Santa Rosa 265, Santiago, Chile",
+      "placeId": "ChIJ12GlK3XFYpYRU-LKTG5fUJE",
+      "coordenadas": ""
+    },
+    {
+      "idDireccion": 2,
+      "locacion": "Temístocles 5615, Pedro Aguirre Cerda, Chile",
+      "placeId": "ChIJ12GlK3XFYpYRU-LKTG5fUJE",
+      "coordenadas": ""
+    },
+    {
+      "idDireccion": 3,
+      "locacion": "Pasaje Tres 5300, San Miguel, Chile",
+      "placeId": "ChIJ12GlK3XFYpYRU-LKTG5fUJE",
+      "coordenadas": ""
+    },
+    {
+      "idDireccion": 4,
+      "locacion": "Pje Cuatro 15, Chillan, Chile",
+      "placeId": "ChIJ12GlK3XFYpYRU-LKTG5fUJE",
+      "coordenadas": ""
+    },
+    {
+      "idDireccion": 5,
+      "locacion": "Antonia López de Bello 101, Providencia, Chile",
+      "placeId": "ChIJ12GlK3XFYpYRU-LKTG5fUJE",
+      "coordenadas": ""
+    },
+    {
+      "idDireccion": 6,
+      "locacion": "Carmen 110, Santiago, Chile",
+      "placeId": "ChIJ12GlK3XFYpYRU-LKTG5fUJE",
+      "coordenadas": ""
+    },
+    {
+      "idDireccion": 7,
+      "locacion": "Santa Isabel 765, Santiago",
+      "placeId": "ChIJ12GlK3XFYpYRU-LKTG5fUJE",
+      "coordenadas": ""
+    },
+    {
+      "idDireccion": 8,
+      "locacion": "Gral Amengual 472, Santiago, Chile",
+      "placeId": "ChIJ12GlK3XFYpYRU-LKTG5fUJE",
+      "coordenadas": ""
+    },
+    {
+      "idDireccion": 9,
+      "locacion": "N-51, Coihueco",
+      "placeId": "",
+      "coordenadas": "-36.645491, -71.861787"
+    },
+    {
+      "idDireccion": 10,
+      "locacion": "N-51, Coihueco",
+      "placeId": "",
+      "coordenadas": "-36.645491, -71.861787"
+    },
+    {
+      "idDireccion": 11,
+      "locacion": "Avenida el Parron 1971, La Cisterna",
+      "placeId": "ChIJ_8FfcadHY5YRgIE4CwXN5tk",
+      "coordenadas": ""
+    },
+    {
+      "idDireccion": 12,
+      "locacion": "María Vial 8320, La Cisterna, Chile",
+      "placeId": "ChIJ_8FfcadHY5YRgIE4CwXN5tk",
+      "coordenadas": ""
+    },
+    {
+      "idDireccion": 13,
+      "locacion": "María Vial 8320, La Cisterna",
+      "placeId": "ChIJ_8FfcadHY5YRgIE4CwXN5tk",
+      "coordenadas": ""
+    },
+    {
+      "idDireccion": 14,
+      "locacion": "María Vial 8320, La Cisterna",
+      "placeId": "ChIJ_8FfcadHY5YRgIE4CwXN5tk",
+      "coordenadas": ""
+    }
+  ]
+}

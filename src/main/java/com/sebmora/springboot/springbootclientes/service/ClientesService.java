@@ -22,11 +22,9 @@ public class ClientesService {
 
     @Autowired
     private JsonSimpleUtil jsonSimpleUtil;
-    private ArrayList<Cliente> listadoClientesPorId;
 
     public ArrayList<Cliente> getListadoClientes() throws IOException, ParseException {
-        ArrayList<Cliente> clientes = jsonSimpleUtil.getClientes(clientesResource);
-        return clientes;
+        return jsonSimpleUtil.getClientes(clientesResource);
     }
 
     public ArrayList<Cliente> getListadoClientesPorId(String idCliente) throws IOException, ParseException {
