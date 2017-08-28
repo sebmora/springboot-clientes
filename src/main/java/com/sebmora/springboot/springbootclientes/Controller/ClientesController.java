@@ -26,13 +26,13 @@ public class ClientesController {
     @Autowired
     private ClientesService clientesService;
 
-    @ApiOperation(value = "Listado de los clientes del sistema", response = ArrayList.class)
+    @ApiOperation(value = "Listado de los clientes del sistema")
     @RequestMapping(method = RequestMethod.GET)
     public ArrayList<Cliente> listaClientes() throws IOException, ParseException {
         return clientesService.getListadoClientes();
     }
 
-    @ApiOperation(value = "Listado de los clientes del sisema filtrados por idCliente", response = ArrayList.class)
+    @ApiOperation(value = "Listado de los clientes del sisema filtrados por idCliente")
     @RequestMapping(value = "/{idCliente}", method = RequestMethod.GET)
     public ArrayList<Cliente> clientePorId(@PathVariable(value = "idCliente") String idCliente) throws IOException, ParseException {
         return clientesService.getListadoClientesPorId(idCliente);
