@@ -1,7 +1,7 @@
 package com.sebmora.springboot.springbootclientes.service;
 
 import com.sebmora.springboot.springbootclientes.domain.Direccion;
-import com.sebmora.springboot.springbootclientes.util.JsonSimpleUtil;
+import com.sebmora.springboot.springbootclientes.util.JSONSimpleUtil;
 import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -21,11 +21,11 @@ public class DireccionesService {
     private Resource direccionesResource;
 
     @Autowired
-    JsonSimpleUtil jsonSimpleUtil;
+    JSONSimpleUtil jsonSimpleUtil;
 
 
     public ArrayList<Direccion> getListaDirecciones() throws IOException, ParseException {
-        return jsonSimpleUtil.getDirecciones(direccionesResource);
+        return jsonSimpleUtil.mapperJSONArray(direccionesResource,JSONSimpleUtil.LISTA_DIRECCIONES_KEY,Direccion.class);
     }
 
     public ArrayList<Direccion> getListaDirecciones(int idDireccion) throws IOException, ParseException {

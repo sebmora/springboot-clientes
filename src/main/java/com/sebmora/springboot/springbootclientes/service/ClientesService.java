@@ -1,7 +1,7 @@
 package com.sebmora.springboot.springbootclientes.service;
 
 import com.sebmora.springboot.springbootclientes.domain.Cliente;
-import com.sebmora.springboot.springbootclientes.util.JsonSimpleUtil;
+import com.sebmora.springboot.springbootclientes.util.JSONSimpleUtil;
 import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -21,10 +21,11 @@ public class ClientesService {
     private Resource clientesResource;
 
     @Autowired
-    private JsonSimpleUtil jsonSimpleUtil;
+    private JSONSimpleUtil jsonSimpleUtil;
 
     public ArrayList<Cliente> getListadoClientes() throws IOException, ParseException {
-        return jsonSimpleUtil.getClientes(clientesResource);
+        return new ArrayList<>();
+        //return jsonSimpleUtil.getClientes(clientesResource);
     }
 
     public ArrayList<Cliente> getListadoClientesPorId(String idCliente) throws IOException, ParseException {

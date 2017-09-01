@@ -4,6 +4,8 @@ import com.sebmora.springboot.springbootclientes.domain.Cliente;
 import com.sebmora.springboot.springbootclientes.service.ClientesService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,14 +29,20 @@ public class ClientesController {
     private ClientesService clientesService;
 
     @ApiOperation(value = "Listado de los clientes del sistema", response = ArrayList.class)
-    @RequestMapping(method = RequestMethod.GET)
-    public ArrayList<Cliente> listaClientes() throws IOException, ParseException {
+    @RequestMapping(method = RequestMethod.GET, produces = "application/json")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Lista entregada correctamente")
+    })
+    public Iterable<Cliente> listaClientes() throws IOException, ParseException {
         return clientesService.getListadoClientes();
     }
 
     @ApiOperation(value = "Listado de los clientes del sisema filtrados por idCliente", response = ArrayList.class)
-    @RequestMapping(value = "/{idCliente}", method = RequestMethod.GET)
-    public ArrayList<Cliente> clientePorId(@PathVariable(value = "idCliente") String idCliente) throws IOException, ParseException {
+    @RequestMapping(value = "/{idCliente}", method = RequestMethod.GET, produces = "application/json")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Lista entregada correctamente")
+    })
+    public Iterable<Cliente> clientePorId(@PathVariable(value = "idCliente") String idCliente) throws IOException, ParseException {
         return clientesService.getListadoClientesPorId(idCliente);
     }
 

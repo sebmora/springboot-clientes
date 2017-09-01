@@ -26,13 +26,13 @@ public class DireccionesController {
     DireccionesService direccionesService;
 
     @ApiOperation(value = "Listado direcciones clientes del sistema", response = ArrayList.class)
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET, produces = "application/json")
     public ArrayList<Direccion> listaDirecciones() throws IOException, ParseException {
         return direccionesService.getListaDirecciones();
     }
 
     @ApiOperation(value = "Listado direcciones clientes del sistema por id direccion", response = ArrayList.class)
-    @RequestMapping(value = "/{idDireccion}", method = RequestMethod.GET)
+    @RequestMapping(value = "/{idDireccion}", method = RequestMethod.GET, produces = "application/json")
     public ArrayList<Direccion> listaDireccionesById(@PathVariable(value = "idDireccion") int idDireccion) throws IOException, ParseException {
         return direccionesService.getListaDirecciones(idDireccion);
     }
