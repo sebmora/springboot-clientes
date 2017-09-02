@@ -24,8 +24,7 @@ public class ClientesService {
     private JSONSimpleUtil jsonSimpleUtil;
 
     public ArrayList<Cliente> getListadoClientes() throws IOException, ParseException {
-        return new ArrayList<>();
-        //return jsonSimpleUtil.getClientes(clientesResource);
+        return jsonSimpleUtil.mapperJSONArray(clientesResource, JSONSimpleUtil.LISTA_USUARIOS_KEY, Cliente.class);
     }
 
     public ArrayList<Cliente> getListadoClientesPorId(String idCliente) throws IOException, ParseException {

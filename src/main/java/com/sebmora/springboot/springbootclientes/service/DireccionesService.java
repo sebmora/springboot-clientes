@@ -25,7 +25,7 @@ public class DireccionesService {
 
 
     public ArrayList<Direccion> getListaDirecciones() throws IOException, ParseException {
-        return jsonSimpleUtil.mapperJSONArray(direccionesResource,JSONSimpleUtil.LISTA_DIRECCIONES_KEY,Direccion.class);
+        return jsonSimpleUtil.mapperJSONArray(direccionesResource, JSONSimpleUtil.LISTA_DIRECCIONES_KEY, Direccion.class);
     }
 
     public ArrayList<Direccion> getListaDirecciones(int idDireccion) throws IOException, ParseException {

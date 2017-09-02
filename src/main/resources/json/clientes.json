@@ -1,13 +1,13 @@
 {
   "listaUsuarios": [
     {
-      "id": "18051246-2",
-      "nombre": "Sebastian",
-      "apellidoPaterno": "Mora",
-      "apellidoMaterno": "Espinoza",
-      "idDireccion": 1,
-      "telefono": 97727696,
-      "email": "sebmora@gmail.com"
+        "id": "18051246-2",
+        "nombre": "Sebastian",
+        "apellidoPaterno": "Mora",
+        "apellidoMaterno": "Espinoza",
+        "idDireccion": 1,
+        "telefono": 97727696,
+        "email": "sebmora@gmail.com"
     },
     {
       "id": "17542265-3",

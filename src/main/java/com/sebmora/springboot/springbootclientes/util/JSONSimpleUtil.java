@@ -28,42 +28,12 @@ public class JSONSimpleUtil<T> {
         JSONObject jsonObject = (JSONObject) (new JSONParser()).parse(inputStreamReader);
         JSONArray jsonArray = (JSONArray) jsonObject.get(KEY);
 
-        DireccionConverter direccionConverter = new DireccionConverter();
         ObjectMapper mapper = new ObjectMapper();
-
         for (Object o : jsonArray) {
-            T t = mapper.readValue(jsonObject.toJSONString(), clazz);
+            JSONObject obj = (JSONObject) o;
+            T t = mapper.readValue(obj.toJSONString(), clazz);
             list.add(t);
         }
-
         return list;
     }
-
-    /*
-    public ArrayList<Cliente> getClientes(Resource clientesResource) throws IOException, ParseException {
-        InputStreamReader inputStreamReader = new InputStreamReader(clientesResource.getInputStream());
-        JSONObject jsonObject = (JSONObject) (new JSONParser()).parse(inputStreamReader);
-        JSONArray listaUsuarios = (JSONArray) jsonObject.get(LISTA_USUARIOS_KEY);
-        ArrayList<Cliente> clientes = new ArrayList<>();
-        ClienteConverter clienteConverter = new ClienteConverter();
-        for (Object o : listaUsuarios) {
-            Cliente c = clienteConverter.convert((JSONObject) o);
-            clientes.add(c);
-        }
-        return clientes;
-    }
-
-    public ArrayList<Direccion> getDirecciones(Resource direccionesResource) throws IOException, ParseException {
-        InputStreamReader inputStreamReader = new InputStreamReader(direccionesResource.getInputStream());
-        JSONObject jsonObject = (JSONObject) (new JSONParser()).parse(inputStreamReader);
-        JSONArray listaDirecciones = (JSONArray) jsonObject.get(LISTA_DIRECCIONES_KEY);
-        ArrayList<Direccion> direcciones = new ArrayList<>();
-        DireccionConverter direccionConverter = new DireccionConverter();
-        for (Object o : listaDirecciones) {
-            Direccion d = direccionConverter.convert((JSONObject) o);
-            direcciones.add(d);
-        }
-        return direcciones;
-    }
-    */
 }
